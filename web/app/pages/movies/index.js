@@ -6,8 +6,10 @@ import staticData from 'lib/static-data-generator';
 var MoviesPage = ATV.Page.create({
     name: 'movies',
     // url: API.discoverMovies,
-    data() {
-    	return {results: staticData(40)};
+    ready(options, resolve, reject) {
+      setTimeout(function() {
+        resolve(staticData(40));
+      }, 3000);
     },
     template: template
 });

@@ -31,7 +31,8 @@ ATV.start({
 			id: 'tvshows',
 			name: 'TV Shows',
 			page: TvShowsPage
-		}]
+		}],
+    loadingMessage: 'Loading...'
 	},
 	templates: {
 		loader: loaderTpl,
